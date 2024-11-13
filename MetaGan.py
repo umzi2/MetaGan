@@ -170,11 +170,11 @@ class MetaGan(nn.Module):
         n_class: int = 1,
         dims: Sequence[int] = (48, 96, 192, 288),
         blocks: Sequence[int] = (3, 3, 9, 3),
-        attention: bool = True,
+        attention: bool = False,
         attn_drop: float = 0.0,
         proj_drop: float = 0.0,
         drop: float = 0.2,
-        sigmoid: bool = True,
+        sigmoid: bool = False,
     ):
         super().__init__()
         dims = [in_ch] + list(dims)
