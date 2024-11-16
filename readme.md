@@ -25,15 +25,30 @@ xychart-beta
     line [0.7592670917510986, 0.7575504779815674, 0.7543612718582153, 0.7510430216789246, 0.7516831755638123, 0.7493809461593628, 0.7491888999938965, 0.7482668161392212, 0.746341347694397, 0.7475400567054749]
 
 ```
-## MetaGan:
-- In Shape: [2, 3, 512, 512]
-- Out Shape: [2, 1]
-- Mean iter time: 15.02ms
-- Max Memory: 1275.43[M]
-- Parameters: 8041.35K
+## SE Mode Test 10k it:
+<img src="img008_10000.png" tile="SE Mode test">
+
+## Dunet Vs MetaGan Conv vs MetaGan Attn 50k it:
+<img src="img008_50000.png" tile="Dunet Vs MetaGan Conv vs MetaGan Attn">
+
+In Shape: [2, 3, 512, 512]
+## MetaGan_attn_SSE:
+- Mean iter time: 23.97ms
+- Max Memory: 1186.90[M]
+- Parameters: 10050.15K
+## MetaGan_attn_CSE:
+- Mean iter time: 25.50ms
+- Max Memory: 1187.76[M]
+- Parameters: 10666.81K
+## MetaGan_attn_CSSE:
+- Mean iter time: 29.71ms
+- Max Memory: 1286.65[M]
+- Parameters: 10669.85K
+## MetaGan_conv_SSE:
+- Mean iter time: 24.47ms
+- Max Memory: 1233.44[M]
+- Parameters: 10304.16K
 ## DUnet:
-- In Shape: [2, 3, 512, 512]
-- Out Shape: [2, 1, 512, 512]
 - Mean iter time: 58.57ms
 - Max Memory: 3385.33[M]
 - Parameters: 3231.46K
