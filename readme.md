@@ -25,6 +25,13 @@ xychart-beta
     line [0.7592670917510986, 0.7575504779815674, 0.7543612718582153, 0.7510430216789246, 0.7516831755638123, 0.7493809461593628, 0.7491888999938965, 0.7482668161392212, 0.746341347694397, 0.7475400567054749]
 
 ```
+[Test models and visual results](https://drive.google.com/drive/folders/1HvFkLRCDe7lFugUE5HAjTyih7QOsAnKB?usp=drive_link)
+|Name|ssim|psnr|dists|
+|-|-|-|-|
+|DUnet|0.7128|23.725|0.0939|
+|MetaGan_attn|**0.7419**|**24.555**|0.1469|
+|MetaGan_conv|0.705|23.659|**0.0921**|
+
 ## SE Mode Test 10k it:
 <img src="img008_10000.png" tile="SE Mode test">
 
