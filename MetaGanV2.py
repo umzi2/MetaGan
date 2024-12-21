@@ -69,7 +69,7 @@ class GatedCNNBlock(nn.Module):
         self.norm = nn.RMSNorm(dim,eps=1e-6)
         hidden = int(expansion_ratio * dim)
         self.fc1 = nn.Linear(dim, hidden * 2)
-        self.act = nn.Mish(True)
+        self.act = nn.Mish()
         conv_channels = int(conv_ratio * dim)
         self.split_indices = (hidden, hidden - conv_channels, conv_channels)
         self.conv = Attention(conv_channels) if att else  DConv(conv_channels)
