@@ -117,8 +117,8 @@ class MetaGan2(nn.Module):
                  dims: Sequence[int] = (48, 96, 192, 288),
                  blocks: Sequence[int] = (3, 3, 9, 3),
                  downs: Sequence[int] = (4,4,2,2),
-                 drop_path = 0.2,
-                 end_drop = 0.4,
+                 drop_path = 0.02,
+                 end_drop = 0.2,
                  ):
 
         super().__init__()
